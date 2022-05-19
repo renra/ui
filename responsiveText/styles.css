@@ -1,0 +1,51 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: rgba(200, 200, 200);
+  overflow-wrap: anywhere;
+}
+
+:root {
+  font-size: 6px;
+}
+
+@media only screen and (min-width: 200px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  :root {
+    font-size: 32px;
+  }
+}
+
+
+
+div#content {
+}
+
+h1 {
+  4rem;
+}
+
+h2 {
+  2rem;
+}
+
+div {
+  1rem;
+}
