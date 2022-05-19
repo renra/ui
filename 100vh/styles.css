@@ -1,0 +1,49 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: rgba(200, 200, 200);
+  overflow-wrap: anywhere;
+}
+
+div#content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  min-height: 100px;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header > div:first-child {
+  text-align: left;
+}
+
+header > div:last-child {
+  text-align: right;
+}
+
+main {
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 100px) {
+  main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+main p {
+  font-size: 24px;
+}
+
+footer {
+  min-height: 100px;
+  border: 1px solid blue;
+  display: grid;
+  place-content: center;
+}
